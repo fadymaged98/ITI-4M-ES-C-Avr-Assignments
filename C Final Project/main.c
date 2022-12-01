@@ -6,14 +6,12 @@
 #include "accounts_database.h"
 
 
-
-//General Fuctions Prototypes
 void separation_line();   //to create a line of '-'
 int main_menu();          //contains main menu options
-bool admin_menu();        //contains admin menu username and password check
+bool admin_menu();        //contains admin menu ,username and password check
 void admin_privilages();  //contains admin functions
-u32 client_menu();       //contains admin functions
-void client_privilages();
+u32 client_menu();        //contains client menu,ID and password check
+void client_privilages(); //contains client functions
 
 
 
@@ -36,11 +34,11 @@ int main() {
                 exit_program = 1;
                 break;
             default:
-                printf("Wrong Choice!\n");
+                printf("\t\tWrong Choice!\n\n");
                 break;
         }
     } while (!exit_program);
-    printf("xx");
+    printf("...................Exiting...................");
     return 0;
 }
 
@@ -92,7 +90,7 @@ bool admin_menu(){
     if ((entered_username[0] != 'a') || (entered_username[1] != 'd') || (entered_username[2] != 'm') ||
         (entered_username[3] != 'i') || (entered_username[4] != 'n') || entered_password != actual_password)
         {
-        printf("        Wrong Username or Password !!\n\n\n");
+        printf("\nWrong Username or Password !!\n");
         return 0;
     }
     return 1;
@@ -190,7 +188,7 @@ u32 client_menu() {
         if (id_check & pass_check) {
             return entered_acc_id;
         }else {
-            printf("Wrong Account ID or Password.\n");
+            printf("\nWrong Account ID or Password.\n");
             return 0;
         }
     }
@@ -225,7 +223,7 @@ void client_privilages(u32 entered_acc_id) {
                 exit_to_prev = 1;
                 break;
             default:
-                printf("Wrong Choice!\n");
+                printf("\t\tWrong Choice!\n");
                 break;
         }
 
