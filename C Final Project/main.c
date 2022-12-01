@@ -8,13 +8,12 @@
 
 
 //General Fuctions Prototypes
-void separation_line();
-int main_menu();
-bool admin_menu();
-void admin_privilages();
-
-void client_menu();
-
+void separation_line();   //to create a line of '-'
+int main_menu();          //contains main menu options
+bool admin_menu();        //contains admin menu username and password check
+void admin_privilages();  //contains admin functions
+u32 client_menu();       //contains admin functions
+void client_privilages();
 
 
 
@@ -29,7 +28,9 @@ int main() {
                 }
                 break;
             case 2:
-                client_menu();
+                if(client_menu()){
+                    client_privilages();
+                }
                 break;
             case 3:
                 exit_program = 1;
@@ -160,13 +161,12 @@ void admin_privilages(){
 }
 
 
-void client_menu() {
+u32 client_menu() {
     u32 entered_acc_id;
     u32 entered_password;
     bool id_check = 0;
     bool pass_check = 0;
-    bool exit_to_prev = 0;
-    u8 client_mode_selection;
+
 
     printf("               Welcome Client\n");
     printf("               -------------\n");
@@ -186,10 +186,20 @@ void client_menu() {
             if (id_validation->password == entered_password) {
                 pass_check = 1;
             }
-        } else {
+        }
+        if (id_check & pass_check) {
+            return entered_acc_id;
+        }else {
             printf("Wrong Account ID or Password.\n");
+            return 0;
         }
     }
+
+}
+
+void client_privilages(u32 entered_acc_id) {
+    bool exit_to_prev = 0;
+    u8 client_mode_selection;
     while (!exit_to_prev) {
         separation_line();
         printf("1.To Make Transaction      :         Press 1.\n"

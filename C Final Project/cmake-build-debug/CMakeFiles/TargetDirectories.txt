@@ -1,3 +1,3 @@
-D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Project/cmake-build-debug/CMakeFiles/C_Project.dir
-D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project/cmake-build-debug/CMakeFiles/C_Project.dir
+D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

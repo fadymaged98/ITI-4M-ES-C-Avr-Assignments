@@ -1,4 +1,4 @@
-# Install script for directory: D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Project
+# Install script for directory: D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
