@@ -1,4 +1,0 @@
-"D:\Games\Programs\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Games/Programs/CLion 2022.2/bin/ninja/win/ninja.exe" -G Ninja -S "D:\Courses\ITI\ITI 4 Months Embedded Systems\1-C & AVR\Assignments\C Final Project" -B "D:\Courses\ITI\ITI 4 Months Embedded Systems\1-C & AVR\Assignments\C Final Project\cmake-build-debug"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/Courses/ITI/ITI 4 Months Embedded Systems/1-C & AVR/Assignments/C Final Project/cmake-build-debug
