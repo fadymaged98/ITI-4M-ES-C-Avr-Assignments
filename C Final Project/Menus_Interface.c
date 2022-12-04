@@ -40,7 +40,7 @@ int main_menu(){
 
 bool admin_menu(){
     u8 entered_username[100]={'\0'};
-    u8 actual_username[]= "admin";
+    u8 actual_username[]= "fady";
     int entered_password;
     int actual_password=1111;
 
@@ -54,8 +54,8 @@ bool admin_menu(){
     scanf("%d", &entered_password);
     fflush(stdin);
 
-    if ((entered_username[0] != 'a') || (entered_username[1] != 'd') || (entered_username[2] != 'm') ||
-        (entered_username[3] != 'i') || (entered_username[4] != 'n') || entered_password != actual_password)
+    if ((entered_username[0] != 'f') || (entered_username[1] != 'a') || (entered_username[2] != 'd') ||
+        (entered_username[3] != 'y') || (entered_username[4] != '\0')|| entered_password != actual_password)
     {
         printf("\nWrong Username or Password !!\n");
         return 0;
